@@ -1,4 +1,3 @@
-  THIS IS A MICRO PYTHON FILE
 
 
 
@@ -27,8 +26,27 @@ motor3 = Motor(Port.D, Port.A)
 
 #motor1.run_time(225, 1000)
 
-#motor2.run_time(225, 1000) 
+motor2.run_time(225, 1000) 
+
 motor3.run_angle(1000, 300)
+
 # Write your program here.
 ev3.speaker.beep(1)
+
+motor3.speed_sp = 500
+
+motor2.speed_sp = 500
+
+robot = DriveBase(motor2, motor3)
+
+robot.straight(2)
+
+
+
+
+
+
+
+
+
 
